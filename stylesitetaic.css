@@ -1,0 +1,305 @@
+/* Eléments principaux de la page */
+
+/* body settings*/
+body
+{
+    background-color: blanchedalmond;
+    font-family: 'Book Antiqua', Arial, sans-serif;
+    color: black;
+}
+
+#bloc_page
+{
+    width: 1000px;
+    margin: auto;
+}
+
+/* header settings*/
+header
+{
+    background: url('photos/image7.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 10px;
+}
+
+#logo img
+{
+    height: 90px;
+    width: 90px;
+}
+
+header h1
+{
+    font-family: 'cambria', serif;
+    font-size: 2.5em;
+    font-weight: normal;    
+}
+
+
+/* section*/
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    text-align: justify-all;
+    font-family: cambria, serif;
+    font-weight: normal;
+    text-transform: none;
+}
+
+p
+{
+    font-family: Times New Roman;
+}
+
+em
+{
+    font-family: Harrington;
+    text-transform: none;
+}
+
+#titre_article
+{
+    
+}
+
+section h1, footer h1, nav a
+{
+    font-family: cambria, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    font-family: cambria;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Header */
+
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    text-decoration-style: dotted;
+}
+
+nav li
+{
+    margin-right: 20px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/* Bannière */
+
+#banniere_image
+{
+    margin-top: 15px;
+    height: 200px;
+
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 15px 0px 25px #1c1a19;
+    margin-bottom: 25px;
+
+    background-image: url("photos/images15.jpg");
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: initial;    
+}
+
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    font-family: Stencil;
+    color: black;
+    font-size: 0.8em;
+}
+
+.bouton_rouge
+{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: url('./photos/images8.jpg') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Corps */
+
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+    flex: 3;
+}
+
+article img
+{
+    width: 700px;
+    height: 200px;
+}
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.9em;
+}
+
+aside
+{
+    flex: 1.2;
+    position: relative;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    font-family: cambria;
+}
+
+#photos_images2
+{
+    width: 150px; 
+    height: 120px;
+    margin: 0px 5px 0px 0px
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+aside img
+{
+    width: 46px; 
+    height: 46px;
+    margin: 0px 5px 0px 0px
+    display: flex;
+}
+
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    padding-top: 25px;
+    
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+
+#tweet
+{
+    width: 28%;
+}
+
+#mes_photos
+{
+    width: 35%;
+}
+
+#mes_amis
+{
+    width: 31%;
+}
+
+#mes_photos img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+
+#listes_amis
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+#mes_amis ul
+{
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+    color: #760001;
+}
