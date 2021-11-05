@@ -63,11 +63,20 @@ section
     font-family: cambria, serif;
     font-weight: normal;
     text-transform: none;
+    font-size: 20px;
 }
 
-p
+#no_flex
 {
-    font-family: Times New Roman;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    text-align: justify-all;
+    font-size: 30px;
+    font-family: cambria, serif;
+    font-weight: normal;
+    text-transform: none;
 }
 
 em
@@ -81,20 +90,80 @@ em
     
 }
 
-section h1, footer h1, nav a
+section h1 
 {
     font-family: cambria, serif;
-    font-weight: normal;
     text-transform: uppercase;
-
     font-family: cambria;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
 }
 
-/* Header */
+footer h1, nav a
+{
+    font-family: cambria, serif;
+    text-transform: uppercase;
+    font-family: cambria;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 
+
+
+/* Bannière */
+
+#banniere_image
+{
+    margin-top: 15px;
+    height: 200px;
+
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 15px 0px 25px #1c1a19;
+    margin-bottom: 25px;
+
+    background: url('photos/image0.jpg') repeat-x top;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: initial;    
+}
+
+#banniere_description
+{
+    position: absolute;
+    bottom: 0; 
+    border-radius: 0px 0px 5px 5px;
+    width: 70.5%;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 4px;
+    font-family: Stencil;
+    color: black;
+    font-size: 0.8em;
+}
+
+.bouton_rouge
+{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
 
 /* Navigation */
 
@@ -103,6 +172,7 @@ nav ul
     list-style-type: none;
     display: flex;
     text-decoration-style: dotted;
+    background-color: white;
 }
 
 nav li
@@ -122,60 +192,6 @@ nav a:hover
 {
     color: #760001;
     border-bottom: 3px solid #760001;
-}
-
-/* Bannière */
-
-#banniere_image
-{
-    margin-top: 15px;
-    height: 200px;
-
-    border-radius: 10px;
-    position: relative;
-    box-shadow: 15px 0px 25px #1c1a19;
-    margin-bottom: 25px;
-
-    background-image: url("photos/images15.jpg");
-        background-position-x: initial;
-        background-position-y: initial;
-        background-size: initial;
-        background-repeat-x: no-repeat;
-        background-repeat-y: no-repeat;
-        background-attachment: initial;
-        background-origin: initial;
-        background-clip: initial;
-        background-color: initial;    
-}
-
-#banniere_description
-{
-    position: absolute;
-    bottom: 0;
-    border-radius: 0px 0px 5px 5px;
-    width: 99.5%;
-    height: 33px;
-    padding-top: 15px;
-    padding-left: 4px;
-    font-family: Stencil;
-    color: black;
-    font-size: 0.8em;
-}
-
-.bouton_rouge
-{
-    height: 25px;
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    background: url('./photos/images8.jpg') repeat-x;
-    border: 1px solid #760001;
-    border-radius: 5px;
-    font-size: 1.2em;
-    text-align: center;
-    padding: 3px 8px 0px 8px;
-    color: white;
-    text-decoration: none;
 }
 
 /* Corps */
@@ -219,13 +235,13 @@ aside
     padding: 10px;
     color: white;
     font-size: 0.9em;
-    font-family: cambria;
+    2font-family: cambria;
 }
 
 #photos_images2
 {
-    width: 150px; 
-    height: 120px;
+    width: 300px; 
+    height: 280px;
     margin: 0px 5px 0px 0px
     display: block;
     margin-block-start: 1em;
@@ -236,26 +252,33 @@ aside
 
 aside img
 {
-    width: 46px; 
-    height: 46px;
-    margin: 0px 5px 0px 0px
+    width: 40px; 
+    height: 40px;
+    margin: 5px 5px 5px 5px
     display: flex;
+    
 }
 
+aside ul
+{
+    text-align: left;
+}
 
 /* Footer */
 
 footer
 {
-    display: flex;
-    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    object-position: center;
+    background:  url('photos/images13.jpg') repeat-x top;
     padding-top: 25px;
+    width: 1100px;
     
 }
 
 footer p, footer ul
 {
     font-size: 0.8em;
+    color:  black;
 }
 
 footer h1
@@ -264,41 +287,27 @@ footer h1
 }
 
 
-#tweet
+#partenaires
 {
-    width: 28%;
+    width: 100%;
 }
 
-#mes_photos
-{
-    width: 35%;
-}
-
-#mes_amis
-{
-    width: 31%;
-}
-
-#mes_photos img
-{
-    border: 1px solid #181818;
-    margin-right: 2px;
-}
 
 #listes_amis
 {
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
     margin-top: 0;
+    font-size: 20px;
 }
 
-#mes_amis ul
+#partenaires ul
 {
     list-style-image: url('images/ico_liensexterne.png');
     padding-left: 2px;
 }
 
-#mes_amis a
+#partenaires a
 {
     text-decoration: none;
     color: #760001;
