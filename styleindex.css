@@ -15,6 +15,9 @@ body
 }
 
 /* header settings*/
+
+
+
 header
 {
     background: url('photos/image7.png') repeat-x bottom;
@@ -118,7 +121,7 @@ footer h1, nav a
 {
     margin-top: 15px;
     height: 200px;
-
+    width: 1060px;
     border-radius: 10px;
     position: relative;
     box-shadow: 15px 0px 25px #1c1a19;
@@ -272,7 +275,7 @@ footer
     background:  url('photos/images13.jpg') repeat-x top;
     padding-top: 25px;
     width: 1100px;
-    
+    color: black;
 }
 
 footer p, footer ul
@@ -307,8 +310,4 @@ footer h1
     padding-left: 2px;
 }
 
-#partenaires a
-{
-    text-decoration: none;
-    color: #760001;
-}
+
